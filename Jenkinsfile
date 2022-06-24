@@ -22,7 +22,7 @@ pipeline {
          steps {
              script {
                  
-                        def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'Test.csv', description: 'Upload only CSV file')]
+                        def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'Release_Status.CSV.csv', description: 'Upload only CSV file')]
                         def csvContent = readFile "${inputCSVPath}"
                         
                          echo ("CSV FILE PATH IS : ${inputCSVPath}")
