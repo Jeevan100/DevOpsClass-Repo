@@ -31,14 +31,7 @@ pipeline {
                  
                  echo env.STAGE_NAME
                  echo '=========== Upload a CSV =============='
-            
-            stage{
-               steps{
-                  script{
-                     
-                     emailext to: "naivetechblog@gmail.com",
-                     subject: "Test Email",
-                     body: "Test"
+           
                 
                         
          }
@@ -46,4 +39,3 @@ pipeline {
        
    }
   }
-         }
