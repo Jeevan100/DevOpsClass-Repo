@@ -31,7 +31,15 @@ pipeline {
                  
                  echo env.STAGE_NAME
                  echo '=========== Upload a CSV =============='
-                
+        
+            
+        post{
+             always{
+                  mail to: "jeevan010202@gmail.com",
+                  subject: "Test Email",
+                  body: "Test to my job is running or not i think i it susces"
+        }
+    }
                         
          }
       }
