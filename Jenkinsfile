@@ -36,6 +36,11 @@ pipeline {
                         
          }
       }
-       
+      stage('Email alert'){
+         steps {
+            
+          emailext body: '', subject: 'upload completed csv file', to: 'jeevan010202@gmail.com'
+         }
+      }  
    }
   }
