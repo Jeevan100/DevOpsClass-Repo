@@ -30,7 +30,7 @@ pipeline {
         }
                  
                  echo env.STAGE_NAME
-                 echo '=========== Upload a CSV =============='
+                 echo '=========== Release_Status.CSV.csv=============='
            
                 
                         
